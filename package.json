@@ -5,9 +5,11 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.3",
+    "heroku": "^0.2.0",
     "password-generator": "^2.1.0"
   },
-    "scripts": {
-    "start": "node index.js"
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
   }
 }
